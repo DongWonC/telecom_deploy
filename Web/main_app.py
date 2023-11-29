@@ -21,7 +21,7 @@ def fetch_image(url):
 def main():
     with st.sidebar:
         # GitHub에서 이미지 가져오기
-        sidebar_image_url = "https://raw.githubusercontent.com/DongWonC/telecom/main/Web/image/title.png"
+        sidebar_image_url = "https://raw.githubusercontent.com/DongWonC/telecom_deploy/main/Web/image/title.png"
         sidebar_image = fetch_image(sidebar_image_url)
 
         if sidebar_image:
@@ -40,7 +40,7 @@ def main():
         total.main()
 
     elif choice == '서비스 제공자':
-        provider_image_url = "https://raw.githubusercontent.com/DongWonC/telecom/main/Web/image/procider.png"
+        provider_image_url = "https://raw.githubusercontent.com/DongWonC/telecom_deploy/main/Web/image/procider.png"
         provider_image = fetch_image(provider_image_url)
 
         if provider_image:

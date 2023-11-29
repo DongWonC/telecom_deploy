@@ -40,7 +40,7 @@ def main():
         <h1 style='text-align: center;'>개인정보 수집 · 활용 동의서</h1>
     """, unsafe_allow_html=True)
 
-    image_url = "https://github.com/DongWonC/telecom/raw/main/Web/image/개인정보처리방침.png"
+    image_url = "https://github.com/DongWonC/telecom_deploy/raw/main/Web/image/개인정보처리방침.png"
     response = requests.get(image_url)
     
     if response.status_code == 200:

@@ -11,7 +11,7 @@ def main():
     col1, col2 = st.columns(2)
 
     # 첫 번째 열
-    image_url = "https://raw.githubusercontent.com/DongWonC/telecom/main/Web/image/kt_poster.png"
+    image_url = "https://raw.githubusercontent.com/DongWonC/telecom_deploy/main/Web/image/kt_poster.png"
     response = requests.get(image_url)
 
     if response.status_code == 200:
