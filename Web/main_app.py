@@ -5,7 +5,7 @@ import streamlit as st
 from PIL import Image
 from io import BytesIO
 
-from sub_app import home_app, store_app, total
+from sub_app import home_app, digital, KT, total
 
 # 이미지를 가져오는 함수
 def fetch_image(url):
@@ -27,14 +27,17 @@ def main():
         if sidebar_image:
             st.image(sidebar_image, use_column_width=True)
 
-        menu = ['홈', '매장 찾기', '서비스 문자 발송', '서비스 제공자']
+        menu = ['홈', 'KT 위치', '디지털 배움터 위치', '서비스 문자 발송', '서비스 제공자']
         choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == '홈':
         home_app.main()
 
-    elif choice == '매장 찾기':
-        store_app.main()
+    elif choice == 'KT 위치':
+        KT.main()
+
+    elif choice == '디지털 배움터 위치':
+        digital.main()
 
     elif choice == '서비스 문자 발송':
         total.main()
