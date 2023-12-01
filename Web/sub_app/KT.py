@@ -16,7 +16,7 @@ def main():
     else:
         print(f"Failed to download the file. Status code: {response.status_code}")
 
-    api_key = 'AIzaSyBUqEmTNUfF0SzDnnFuXSo0y2sx_-pn5y4'
+    api_key = 'AIzaSyBTSWuR0vjBBxb6OMmgkaYDNCmrO517F68'
 
     m = folium.Map(location=[37.5665, 126.9780], zoom_start=15)
 
@@ -39,7 +39,7 @@ def main():
     lc = LocateControl()
     lc.add_to(m)
 
-    st.title('지도를 통해 가까운 디지털 배움터 장소를 확인해보세요!')
+    st.title('디지털 배움터')
     st.components.v1.html(m._repr_html_(), height=600)
     st.write(m)
 
