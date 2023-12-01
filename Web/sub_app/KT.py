@@ -39,10 +39,9 @@ def main():
     lc = LocateControl()
     lc.add_to(m)
 
-    st.title('디지털 배움터')
+    st.title('KT')
     st.components.v1.html(m._repr_html_(), height=600)
     st.write(m)
 
 if __name__ == "__main__":
     main()
-    
