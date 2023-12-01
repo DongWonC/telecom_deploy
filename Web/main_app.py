@@ -27,7 +27,7 @@ def main():
         if sidebar_image:
             st.image(sidebar_image, use_column_width=True)
 
-        menu = ['홈', 'KT 위치', '디지털 배움터 위치', '서비스 문자 발송', '서비스 제공자']
+        menu = ['홈', 'KT 위치', '디지털 배움터 위치', '서비스 문자 발송','서비스 이메일 발송', '서비스 제공자']
         choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == '홈':
