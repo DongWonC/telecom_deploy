@@ -40,9 +40,13 @@ def main():
     lc = LocateControl()
     lc.add_to(m)
 
-    st.title('디지털 배움터')
-    st.components.v1.html(m._repr_html_(), height=600)
-    st.write(m)
+    st.title('가까운 디지털 배움터를 찾아보세요')
+
+    # Get the HTML representation of the map
+    html_map = m._repr_html_()
+
+    # Display the HTML map using components.v1.html
+    st.components.v1.html(html_map, height=600)
 
 if __name__ == "__main__":
     main()
