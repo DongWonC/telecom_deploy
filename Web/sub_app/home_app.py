@@ -5,7 +5,10 @@ from io import BytesIO
 
 def main():
     # 페이지의 제목
-    st.title("디지털 기기 무료 교육")
+    st.markdown(
+        f"<h1 style='text-align: center;'>디지털 기기 무료 교육</h1>",
+        unsafe_allow_html=True
+    )
 
     # 두 개의 열 생성
     col1, col2 = st.columns(2)
