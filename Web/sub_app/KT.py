@@ -21,9 +21,11 @@ def main():
     m = folium.Map(location=[37.5665, 126.9780], zoom_start=15)
 
     for index, row in df.iterrows():
+        name_type = row['장소타입']
         name = row['장소']
         address = row['주소']
-
+        phone = row['전화번호']
+        
         response = requests.get(f'https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={api_key}')
         data = response.json()
 
@@ -32,7 +34,7 @@ def main():
             lat, lng = location['lat'], location['lng']
 
             html_popup = f'<strong>{name}</strong><br>{address}<br>'
-            icon = folium.CustomIcon(icon_image=r'https://github.com/DongWonC/telecom_deploy/raw/main/Web/image/blue_marker.png', icon_size=(60, 60))
+            icon = folium.CustomIcon(icon_image=r'https://github.com/DongWonC/telecom_deploy/raw/main/Web/image/red_marker.png', icon_size=(60, 60))
 
             folium.Marker(location=[lat, lng], icon=icon, popup=folium.Popup(html_popup, max_width=300)).add_to(m)
 
