@@ -33,7 +33,7 @@ def main():
             location = data['results'][0]['geometry']['location']
             lat, lng = location['lat'], location['lng']
 
-            html_popup = f'<strong>{name}</strong><br>{address}<br>'
+            html_popup = f'{name_type}{name}{address}전화번호 : {phone}'
             icon = folium.CustomIcon(icon_image=r'https://github.com/DongWonC/telecom_deploy/raw/main/Web/image/red_marker.png', icon_size=(60, 60))
 
             folium.Marker(location=[lat, lng], icon=icon, popup=folium.Popup(html_popup, max_width=300)).add_to(m)
