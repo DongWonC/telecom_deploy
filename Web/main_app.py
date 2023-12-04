@@ -27,16 +27,16 @@ def main():
         if sidebar_image:
             st.image(sidebar_image, use_column_width=True)
 
-        menu = ['홈', 'KT 위치', '디지털 배움터 위치', '서비스 문자 발송', '서비스 제공자']
+        menu = ['홈', 'KT 대리점 찾기', '디지털 배움터 찾기', '서비스 문자 발송', '서비스 제공자']
         choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == '홈':
         home_app.main()
 
-    elif choice == 'KT 위치':
+    elif choice == 'KT 대리점 찾기':
         KT.main()
 
-    elif choice == '디지털 배움터 위치':
+    elif choice == '디지털 배움터 찾기':
         digital.main()
 
     elif choice == '서비스 문자 발송':
