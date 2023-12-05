@@ -5,13 +5,13 @@ from twilio.rest import Client
 import re
 
 def send_twilio_message(message_body, to_phone_number):
-    account_sid = 'AC3e2b9f3750f142ab2391bdddb51cbf45'
-    auth_token = '2c4adde12f90301b8c44cd9e4852486d'
+    account_sid = 'AC31cd4ff285aa2abe7a96856c2812b252'
+    auth_token = 'e8c357ab182216bb1452e1b56b4f0b39'
     twilio_client = Client(account_sid, auth_token)
 
     try:
         message = twilio_client.messages.create(
-            from_='+16512377967',
+            from_='+17753414446',
             body=message_body,
             to=to_phone_number
         )
@@ -21,13 +21,13 @@ def send_twilio_message(message_body, to_phone_number):
 
 # Twilio 메시지 전송 함수
 def send_twilio_message(message_body, to_phone_number):
-    account_sid = 'AC3e2b9f3750f142ab2391bdddb51cbf45'
-    auth_token = '2c4adde12f90301b8c44cd9e4852486d'
+    account_sid = 'AC31cd4ff285aa2abe7a96856c2812b252'
+    auth_token = 'e8c357ab182216bb1452e1b56b4f0b39'
     twilio_client = Client(account_sid, auth_token)
 
     try:
         message = twilio_client.messages.create(
-            from_='+16512377967',
+            from_='+17753414446',
             body=message_body,
             to=to_phone_number
         )
@@ -82,7 +82,7 @@ def main():
 1) 서울 지역 65세 이상 고객에게만 드리는 디지털 기기 무료 교육 이벤트♥
 가까운 디지털 배움터, 대리점, 플라자, 체험형 플라자에 방문하셔서 이용해 보세요!
 
-▶무료 교육에 대해 자세히 알아보기 : http://34.22.104.119:8501
+▶무료 교육에 대해 자세히 알아보기 : multitelecom.site:8501
 
 서울 지역 디지털 기기 무료 교육
 ▶기간 : 2023.12.01.~2023.12.31.
