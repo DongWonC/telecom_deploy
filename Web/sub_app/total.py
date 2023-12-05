@@ -4,8 +4,8 @@ from PIL import Image
 from twilio.rest import Client
 
 def send_twilio_message(message_body, to_phone_number):
-    account_sid = 'AC3e2b9f3750f142ab2391bdddb51cbf45'
-    auth_token = '2c4adde12f90301b8c44cd9e4852486d'
+    account_sid = 'AC31cd4ff285aa2abe7a96856c2812b252'
+    auth_token = 'e8c357ab182216bb1452e1b56b4f0b39'
     twilio_client = Client(account_sid, auth_token)
 
     try:
@@ -20,8 +20,8 @@ def send_twilio_message(message_body, to_phone_number):
 
 # Twilio 메시지 전송 함수
 def send_twilio_message(message_body, to_phone_number):
-    account_sid = 'AC3e2b9f3750f142ab2391bdddb51cbf45'
-    auth_token = '2c4adde12f90301b8c44cd9e4852486d'
+    account_sid = 'AC31cd4ff285aa2abe7a96856c2812b252'
+    auth_token = 'e8c357ab182216bb1452e1b56b4f0b39'
     twilio_client = Client(account_sid, auth_token)
 
     try:
